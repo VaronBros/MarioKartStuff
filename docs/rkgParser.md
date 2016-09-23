@@ -5,6 +5,23 @@ This library parses RKG files into an array.
 ## Usage
 To load and parse from a file:
 ```php
+// instanciate:
+$rkg = new rkgParser();
+
+// open a stream to parse:
+$rkg->loadFromBuffer(fopen('file.rkg', 'r'));
+
+// get metadata such as track ID, character ID, etc:
+$metadata = $rkg->getMeta();
+
+// get lap count and lap times:
+$laps = $rkg->getLaps();
+
+// get user data and location:
+$userdata = $rkg->getUser();
+
+// get raw Mii data:
+$miidata = $rkg->getMiiData();
 ```
 
 To load and parse from a HTTP stream (I.E. one from get_recent_rkg in class.ctgpLeaderboards.php):
