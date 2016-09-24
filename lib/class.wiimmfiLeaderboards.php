@@ -11,7 +11,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 
 $headers = [
-	'User-Agent: GameSpyHTTP/1.0',
+	'User-Agent: mkw-ghost-tools by PokeAcer549: http://github.com/PokeAcer549/mkw-ghost-tools',
     'SOAPAction: "http://gamespy.net/RaceService/GetTopTenRankings"'
 ];
 
